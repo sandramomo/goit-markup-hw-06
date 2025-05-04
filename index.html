@@ -20,7 +20,7 @@
     <title>Main page</title>
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="navigation">
           <a href="./index.html" class="logo"
@@ -54,8 +54,13 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="burger-btn">
+          <svg width="16" height="18">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
     <main>
       <!-- CALL TO ACTION SECTION -->
       <!-- <section class="call-to-action">
@@ -629,7 +634,7 @@
         </div>
       </div>
     </footer> -->
-    <!-- MODAL WINDOW -->
+    <!-- MODAL WINDOWS -->
     <!-- <div class="modal-window visually-hidden">
       <div class="modal-window-container">
         <button class="close-btn" type="button">
@@ -715,5 +720,75 @@
         </form>
       </div>
     </div> -->
+    <div class="burger-menu visually-hidden">
+      <button class="close-btn burger-close" type="button">
+        <svg class="close-icon" height="8" width="8">
+          <use href="./images/icons.svg#icon-exit"></use>
+        </svg>
+      </button>
+      <ul class="burger-nav-list">
+        <li><a href="">Studio</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a href="">Contacts</a></li>
+      </ul>
+      <ul class="burger-contacts-list">
+        <li>
+          <a href="tel:+110001111111" class="contact-element"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="contact-element"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="company-social-media-list burger-social-media">
+        <li class="social-media-list-item company-social-media">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            class="member-social-media-link company-social-media-link"
+          >
+            <svg class="member-social-media-icon" height="24" width="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-list-item company-social-media">
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            class="member-social-media-link company-social-media-link"
+          >
+            <svg class="member-social-media-icon" height="24" width="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-list-item company-social-media">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            class="member-social-media-link company-social-media-link"
+          >
+            <svg class="member-social-media-icon" height="24" width="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-list-item company-social-media">
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            class="member-social-media-link company-social-media-link"
+          >
+            <svg class="member-social-media-icon" height="24" width="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
