@@ -214,36 +214,28 @@ img {
     gap: 40px;
   }
 }
-
 /* Main-page */
 .main-text {
   /* STYLE */
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #ffffff;
   /* LAYOUT */
   max-width: 496px;
 }
 .call-to-action {
   /* LAYOUT */
-  display: flex;
-  gap: 48px;
   padding: 188px 0;
   /* STYLE */
   background-color: var(--navyblue);
-  font-size: 56px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
   color: #ffffff;
   max-width: 1440px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office-sq.jpg);
+    url("../images/people-office-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -254,22 +246,19 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap:72px;
 }
 .order-btn {
   /* STYLE */
   background-color: #4d5ae5;
   color: #ffffff;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
-  font-family: "Roboto", sans-serif;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   border: none;
   /* LAYOUT */
-  margin-top: 46px;
   min-width: 169px;
   height: 56px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -278,6 +267,60 @@ img {
 .order-btn:focus {
   /* STYLE */
   background-color: #404bbf;
+}
+/* Retina mobile */
+@media screen and (resolution: 192dpi) {
+  .call-to-action {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/people-office-mobile@2x.jpg");
+  }
+}
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .call-to-action {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tablet@1x.jpg);
+  }
+  .main-text {
+    font-size: 56px;
+    line-height: 1.07;
+  }
+  /* Retina tablet */
+  @media (resolution: 192dpi) {
+    .call-to-action {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-tablet@2x.jpg);
+    }
+  }
+}
+/* Desktop */
+@media screen and (min-width: 1140px) {
+  .call-to-action {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-pc@1x.jpg);
+  }
+  /* Retina desktop */
+  @media (resolution: 192dpi) {
+    .call-to-action {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-pc@2x.jpg);
+    }
+  }
 }
 /* Advantages section */
 
