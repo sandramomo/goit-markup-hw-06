@@ -20,7 +20,7 @@
     <title>Main page</title>
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="navigation">
           <a href="./index.html" class="logo"
@@ -28,15 +28,15 @@
           >
           <ul class="nav-list">
             <li>
-              <a href="./index.html" class="nav-list-element studio-element">
+              <a href="#call-to-action" class="nav-list-element studio-element">
                 Studio
               </a>
             </li>
             <li>
-              <a href="" class="nav-list-element"> Portfolio </a>
+              <a href="#our-portfolio" class="nav-list-element"> Portfolio </a>
             </li>
             <li>
-              <a href="" class="nav-list-element"> Contacts </a>
+              <a href="#footer" class="nav-list-element"> Contacts </a>
             </li>
           </ul>
         </nav>
@@ -60,17 +60,17 @@
           </svg>
         </button>
       </div>
-    </header> -->
+    </header>
     <main>
       <!-- CALL TO ACTION SECTION -->
-      <section class="call-to-action">
+      <section class="call-to-action" id="call-to-action">
         <div class="container">
           <h1 class="main-text">Effective Solutions for Your Business</h1>
           <button type="button" class="order-btn">Order Service</button>
         </div>
-      </section>
+      </section> 
       <!-- OUR ADVANTAGES -->
-      <!-- <section class="advantages">
+       <section class="advantages">
         <div class="container">
           <h2 class="visually-hidden">Our advanatges</h2>
           <ul class="advantage-list">
@@ -124,15 +124,18 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section> 
       <!-- OUR TEAM -->
-      <!-- <section class="team">
+      <section class="team">
         <div class="container">
           <h2 class="section-header">Our Team</h2>
           <ul class="team-list">
             <li class="team-member">
               <img
                 src="./images/markguerrero_sq.jpg"
+                srcset="
+                  ./images/markguerrero_sq.jpg 1x, ./images/markguerrero@2x.jpg 2x
+                "
                 alt="Photo of Mark Guerrero"
                 width="264"
                 height="260"
@@ -207,6 +210,7 @@
             <li class="team-member">
               <img
                 src="./images/tomford_sq.jpg"
+                srcset="./images/tomford_sq.jpg 1x, ./images/tomford@2x.jpg 2x"
                 alt="Photo of Tom Ford"
                 width="264"
                 height="260"
@@ -281,6 +285,10 @@
             <li class="team-member">
               <img
                 src="./images/camilagarcia_sq.jpg"
+                srcset="
+                  ./images/camilagarcia_sq.jpg 1x,
+                  ./images/camilagarcia@2x.jpg 2x
+                "
                 alt="Photo of Camila Garcia"
                 width="264"
                 height="260"
@@ -355,6 +363,10 @@
             <li class="team-member">
               <img
                 src="./images/danielwilson_sq.jpg"
+                srcset="
+                  ./images/danielwilson_sq.jpg 1x,
+                  ./images/danielwilson@2x.jpg 2x
+                "
                 alt="Photo of Daniel Wilson"
                 width="264"
                 height="260"
@@ -428,9 +440,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section> 
       <!-- OUR PORTFOLIO -->
-      <!-- <section class="our-portfolio">
+      <section class="our-portfolio" id="our-portfolio">
         <div class="container">
           <h2 class="section-header">Our Portfolio</h2>
           <ul class="product-list">
@@ -439,8 +451,8 @@
                 <img
                   src="./images/banking-app-sq.jpg"
                   alt="Banking app"
-                  width="360"
-                  height="300"
+                width="288"
+                  height="280"
                 />
                 <p class="product-list-item-description">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -458,8 +470,8 @@
                 <img
                   src="./images/cashless-payment-sq.jpg"
                   alt="Cashless payment"
-                  width="360"
-                  height="300"
+                  width="288"
+                  height="280"
                 />
                 <p class="product-list-item-description">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -477,8 +489,8 @@
                 <img
                   src="./images/meditation-sq.jpg"
                   alt="Meditation"
-                  width="360"
-                  height="300"
+                  width="288"
+                  height="280"
                 />
                 <p class="product-list-item-description">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -496,8 +508,8 @@
                 <img
                   src="./images/taxi-service-sq.jpg"
                   alt="Taxi service"
-                  width="360"
-                  height="300"
+                  width="288"
+                  height="280"
                 />
                 <p class="product-list-item-description">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -515,8 +527,8 @@
                 <img
                   src="./images/screen-ill-sq.jpg"
                   alt="Screen Illustrations"
-                  width="360"
-                  height="300"
+                  width="288"
+                  height="280"
                 />
                 <p class="product-list-item-description">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -534,8 +546,8 @@
                 <img
                   src="./images/online-courses-sq.jpg"
                   alt="Online courses"
-                  width="360"
-                  height="300"
+                 width="288"
+                  height="280"
                 />
                 <p class="product-list-item-description">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -550,10 +562,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- FOOTER -->
-    <!-- <footer class="footer-context">
+     <footer class="footer-context" id="footer">
       <div class="footer-container-box">
         <div class="footer-content-container">
           <a href="./index.html" class="logo bottom-logo"
@@ -633,9 +645,9 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- MODAL WINDOWS -->
-    <!-- <div class="modal-window visually-hidden">
+     <div class="modal-window">
       <div class="modal-window-container">
         <button class="close-btn" type="button">
           <svg class="close-icon" height="8" width="8">
@@ -719,8 +731,8 @@
           <button type="submit" class="order-btn send-btn">Send</button>
         </form>
       </div>
-    </div> -->
-    <!-- <div class="burger-menu visually-hidden">
+    </div> 
+     <div class="burger-menu visually-hidden">
       <button class="close-btn burger-close" type="button">
         <svg class="close-icon" height="8" width="8">
           <use href="./images/icons.svg#icon-exit"></use>
@@ -789,6 +801,6 @@
           </a>
         </li>
       </ul>
-    </div> -->
+    </div> 
   </body>
 </html>
