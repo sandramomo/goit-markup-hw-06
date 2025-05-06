@@ -200,15 +200,15 @@ img {
   .burger-btn {
     display: none;
   }
-   .navigation .logo {
+  .navigation .logo {
     margin: 0;
   }
   .navigation {
-    gap:120px;
+    gap: 120px;
   }
 }
 /* DESKTOP */
-@media screen and (min-width:1140px) {
+@media screen and (min-width: 1140px) {
   .contacts-list {
     flex-direction: row;
     gap: 40px;
@@ -537,17 +537,21 @@ img {
 .footer-context {
   /* STYLE */
   background-color: #2e2f42;
-  padding: 100px 0;
+  padding: 96px 16px;
 }
 .footer-container-box {
   display: flex;
-  align-items: baseline;
-  margin-left: 156px;
-  gap: 80px;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+}
+.footer-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .bottom-logo {
   display: inline-block;
-  margin-bottom: 16px;
 }
 .footer-text {
   /* STYLE */
@@ -556,19 +560,22 @@ img {
   letter-spacing: 0.02em;
   color: #e7e9fc;
   /* LAYOUT */
+  margin: 0;
   width: 264px;
 }
 .footer-social-media {
-  padding: 40px 0px 100px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 .footer-containers-title {
-  margin: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   color: #ffffff;
   letter-spacing: 0.02em;
-  margin-bottom: 16px;
+  margin: 0;
 }
 .company-social-media-list {
   display: flex;
@@ -578,9 +585,16 @@ img {
 .company-social-media-link:focus {
   background-color: #31d0aa;
 }
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
 .footer-input-container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
   gap: 24px;
 }
 .footer-input {
@@ -589,7 +603,7 @@ img {
   letter-spacing: 0.04em;
   padding-left: 16px;
   color: #ffffff;
-  width: 264px;
+  min-width: 288px;
   height: 40px;
   outline: none;
   background-color: transparent;
@@ -613,7 +627,42 @@ img {
 .subscribe-icon {
   margin-left: 16px;
 }
-
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .footer-container-box {
+    align-items: baseline;
+    padding-left: 108px;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .footer-content-container {
+    align-items: flex-start;
+  }
+  .logo {
+    padding-left: 0;
+  }
+  .footer-input-container {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .footer-social-media {
+    align-items: flex-start;
+  }
+  .footer-form {
+    align-items: flex-start;
+  }
+}
+/* Desktop */
+@media screen and (min-width: 1140px) {
+  .footer-container-box {
+    padding-left: 0;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 80px;
+  }
+}
 /* Modal window */
 .modal-window {
   position: fixed;
@@ -800,7 +849,7 @@ img {
   gap: 48px;
   padding: 0 16px;
   /* STYLE */
-  background-color: #fff;;
+  background-color: #fff;
 }
 .burger-close {
   background-color: transparent;
