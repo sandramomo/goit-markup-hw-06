@@ -212,7 +212,7 @@ img {
   }
 }
 /* DESKTOP */
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1158px) {
   .contacts-list {
     flex-direction: row;
     gap: 40px;
@@ -275,7 +275,7 @@ img {
   background-color: #404bbf;
 }
 /* Retina mobile */
-@media screen and (resolution: 192dpi) {
+@media screen and (min-resolution: 192dpi) {
   .call-to-action {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -298,7 +298,7 @@ img {
     line-height: 1.07;
   }
   /* Retina tablet */
-  @media (resolution: 192dpi) {
+  @media (min-resolution: 192dpi) {
     .call-to-action {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
@@ -309,7 +309,7 @@ img {
   }
 }
 /* Desktop */
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1158px) {
   .call-to-action {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -318,7 +318,7 @@ img {
       url(../images/people-office-pc@1x.jpg);
   }
   /* Retina desktop */
-  @media (resolution: 192dpi) {
+  @media (min-resolution: 192dpi) {
     .call-to-action {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
@@ -390,7 +390,7 @@ img {
   }
 }
 /* DESKTOP */
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1158px) {
   .advantage-list {
     flex-wrap: nowrap;
     gap: 24px;
@@ -507,7 +507,7 @@ img {
   }
 }
 /* DESKTOP */
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1158px) {
   .team-list {
     flex-wrap: nowrap;
     gap: 24px;
@@ -598,7 +598,7 @@ img {
     justify-content: center;
   }
 }
-@media screen and (min-width:1140px) {
+@media screen and (min-width:1158px) {
   .product-list {
     row-gap:48px;
     column-gap: 24px;
@@ -730,7 +730,7 @@ img {
   }
 }
 /* Desktop */
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1158px) {
   .footer-container-box {
     padding-left: 0;
     justify-content: center;
